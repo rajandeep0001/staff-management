@@ -1,0 +1,174 @@
+@charset "utf-8";
+
+
+#login
+{
+	width:331px;
+	height:106px;
+	position:absolute;
+	left: 399px;
+	top: 413px;
+}
+
+#raw
+{
+	width:211px;
+	height:163px;
+	position:absolute;
+	top: 13px;
+	
+}
+#college
+{
+	height:148px;
+	width:900px;
+	position:absolute;
+	top:6px;
+	left: 0px;
+}
+
+#reel
+{
+	width:341px;
+	height:278px;
+	position:absolute;
+	left: 6px;
+	top: 217px;
+}
+
+#deptt
+{
+	width:409px;
+	height:33px;
+	position:absolute;
+	left: 395px;
+	top: 232px;
+}
+
+#photo
+{
+	width:302px;
+	height:348px;
+	position:absolute;
+	left: 707px;
+	top: 241px;
+	border:3px solid gray;
+}
+
+
+#save
+{
+	height:68px;
+	width:53px;
+	position:absolute;
+	left: 510px;
+	top: 931px;
+}
+
+#home
+{
+	height:60px;
+	width:80px;
+	position:absolute;
+	top:5px;
+	left:1001px;
+}
+
+
+#records
+{
+	height:60px;
+	width:90px;
+	position:absolute;
+	top:5px;
+	left:897px;
+}
+#home1
+{
+	height:60px;
+	width:80px;
+	position:absolute;
+	top:10px;
+	left:999px;
+}
+
+
+#records1
+{
+	height:60px;
+	width:90px;
+	position:absolute;
+	top:10px;
+	left:896px;
+}
+#home2
+{
+	height:60px;
+	width:80px;
+	position:absolute;
+	top:10px;
+	left:977px;
+}
+
+
+#records2
+{
+	height:60px;
+	width:66px;
+	position:absolute;
+	top:10px;
+	left:879px;
+}
+
+#home_button
+{
+	height:60px;
+	width:55px;
+	position:absolute;
+	top:4px;
+	left:775px;
+}
+
+#logout
+{
+	height:49px;
+	width:56px;
+	position:absolute;
+	left: 998px;
+	top: 4px;
+}
+
+#logout3
+{
+	height:49px;
+	width:56px;
+	position:absolute;
+	left: 1068px;
+	top: 7px;
+}
+
+#logout1
+{
+	height:61px;
+	width:60px;
+	position:absolute;
+	left: 1093px;
+	top: 5px;
+}
+
+#kjresearch
+{
+	width:528px;
+	height:46px;
+	position:absolute;
+	left: 179px;
+	top: 1870px;
+}
+#cl
+{
+  width: 260px;
+    height: 30px;
+    border: 1px solid gray;
+   box-shadow:0px 0px 7px gray;
+    border-radius:5px;
+}

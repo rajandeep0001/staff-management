@@ -1,0 +1,11 @@
+http://www.w3schools.com/php/php_mysql_update.asp
+
+http://stackoverflow.com/questions/871858/php-pass-variable-to-next-page
+
+http://w3resource.com/PostgreSQL/where.php
+
+http://stackoverflow.com/questions/7969677/php-how-do-i-generate-new-text-fields-based-upon-a-select-option-field-value
+
+http://stackoverflow.com/questions/9760605/using-a-php-variable-in-the-where-clause-of-a-mysql-query
+
+http://www.hotscripts.com/forums/php/41504-passing-variable-where-clause-mysql.html

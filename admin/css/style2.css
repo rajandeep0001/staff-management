@@ -1,0 +1,58 @@
+
+#myreel{ /*sample CSS for demo*/
+border:3px solid gray;
+position:absolute;
+}
+
+.paginate{
+width: 330px;
+margin-top:5px;
+font:bold 14px Arial;
+text-align:center;
+}
+
+.style1 {
+	font-size: 24px;
+	font-weight: bold;
+}
+
+#search
+{
+	position:absolute;
+	height:40px;
+	width:248px;
+	left: 813px;
+	top: 177px;
+}
+#area
+{
+	width:1078px;
+	height:736px;
+	position:absolute;
+	left: 161px;
+	top: 20px;
+	border:2px;
+	border:#333333;
+	}
+	
+	
+#lbutton
+{
+	height:32px;
+	width:62px;
+	position:absolute;
+	left: 738px;
+	top: 181px;
+}
+
+#links
+{
+	font-size:16px;
+	font-style:normal;
+	color:#666666;
+	position:absolute;
+	height:110px;
+	width:281px;
+	left: 397px;
+	top: 276px;
+}

@@ -1,0 +1,250 @@
+@charset "utf-8";
+*{
+	margin:0px;
+	padding:0px;
+}
+#login
+{
+	width:331px;
+	height:156px;
+	position:absolute;
+	left: 399px;
+	top: 413px;
+	border:1px solid lightgray;
+	border-radius:15px;
+	box-shadow:0px 0px 10px black;
+}
+#log_link{
+	height:50px;
+	width:100%;
+	background-color:black;
+}
+#log_con{
+	width:1000px;
+	height:100%;
+	margin:auto;
+}
+#log_con input{
+		float:right;
+		height:35px;
+		width:150px;
+		margin:5px;
+		background-color:white;
+		border-radius:15px;
+}
+#main{
+	width:1000px;
+	height:auto;
+	overflow:hidden;
+	margin:auto;
+}
+#area{
+	width:100%;
+	height:170px;
+}
+.txtarea{
+		height:150px;
+		width:300px;
+}
+.txt{
+	width:250px;
+	padding:5px;
+	margin:7px;
+	margin-top:12px;
+	margin-left:30px;
+}
+.txt2{
+	width:250px;
+	padding:5px;
+	margin:3px;
+}
+.btn{
+	width:100px;
+	padding:5px;
+	margin-left:30px;
+}
+#logo
+{
+	width:211px;
+	height:163px;
+	float:left;
+	overflow:hidden;
+}
+#raw
+{
+	width:211px;
+	height:163px;
+	position:absolute;
+	top: 13px;
+	
+}
+#college
+{
+	height:148px;
+	width:781px;
+	float:left;
+}
+
+#reel
+{
+	width:341px;
+	height:278px;
+	position:absolute;
+	left: 6px;
+	top: 217px;
+}
+
+#deptt
+{
+	width:409px;
+	height:33px;
+	position:absolute;
+	left: 395px;
+	top: 232px;
+}
+
+#photo
+{
+	width:302px;
+	height:348px;
+	border:3px solid gray;
+	float:right;
+	margin-top:70px;
+}
+#tab{
+	border:1px solid black;
+	border-radius:15px;
+
+}
+#tab tr td{
+	padding:10px;
+}
+#tab1{
+	border:1px solid black;
+	border-radius:15px;
+	width:100%;
+
+}
+#tab1 tr td{
+	padding:10px;
+}
+
+#tab2{
+border-radius:15px;
+	width:100%;
+
+}
+#tab2 tr td{
+	padding:10px;
+}
+#tab1 tr th{
+		padding:10px;
+}
+#save
+{
+	height:68px;
+	width:53px;
+	position:absolute;
+	left: 510px;
+	top: 931px;
+}
+
+#home
+{
+	height:60px;
+	width:80px;
+	position:absolute;
+	top:5px;
+	left:1001px;
+}
+
+
+#records
+{
+	height:60px;
+	width:90px;
+	position:absolute;
+	top:5px;
+	left:897px;
+}
+#home1
+{
+	height:60px;
+	width:80px;
+	position:absolute;
+	top:10px;
+	left:999px;
+}
+
+
+#records1
+{
+	height:60px;
+	width:90px;
+	position:absolute;
+	top:10px;
+	left:896px;
+}
+#home2
+{
+	height:60px;
+	width:80px;
+	position:absolute;
+	top:10px;
+	left:977px;
+}
+
+
+#records2
+{
+	height:60px;
+	width:66px;
+	position:absolute;
+	top:10px;
+	left:879px;
+}
+
+#home_button
+{
+	height:60px;
+	width:55px;
+	position:absolute;
+	top:4px;
+	left:775px;
+}
+
+#logout
+{
+	height:49px;
+	width:56px;
+	position:absolute;
+	left: 998px;
+	top: 4px;
+}
+
+#logout3
+{
+	height:49px;
+	width:56px;
+	position:absolute;
+	left: 1068px;
+	top: 7px;
+}
+
+#logout1
+{
+	height:61px;
+	width:60px;
+	position:absolute;
+	left: 1093px;
+	top: 5px;
+}
+
+#kjresearch
+{
+	width:528px;
+	height:46px;
+	position:absolute;
+	left: 179px;
+	top: 1870px;
+}

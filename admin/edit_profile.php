@@ -1,0 +1,150 @@
+<?php session_start(); 
+	include 'connection.php'; 
+	
+?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<link href="css/profile.css" rel="stylesheet" type="text/css" />
+		<script>
+				function fun()
+				{
+					var a=document.getElementById('area').innerHTML;
+					alert(a);
+					window.location='abc.php?a='+a;
+				}
+		</script>
+</head>
+<body id="body" bgcolor="fff8c6">
+	
+	
+	
+	<div id="main"><br/>
+		<div id="main" style="text-align:Center;">
+				<h2>Department of Information Technology</h2>
+    
+   		<form action="" method="post">
+			<?php
+				
+				$sql="SELECT * FROM profile where id='".$_GET['e']."'";
+				if($result=$mysqli->query($sql))
+					{
+						if($result-> num_rows>0)
+						{
+							while($row=$result->fetch_array())
+							{
+			?>
+   		<table id="tab2"  style="text-align:left;">
+      		<tbody>
+				<tr>
+					<td colspan="5"><h3>Personal Information</h3></td>
+				</tr>
+        		<tr>
+						<td><h3>Name:</h3></td>
+						<td>
+							<input type="text" name="name" class="txt2" value="<?php echo $row[3]; ?> ">
+						</td>
+        		</tr>
+        		<tr>
+          			<td><h3>Date of Birth:</h3></td>
+          			<td>
+							<input type="text" name="dob" class="txt2" value="<?php echo $row[4]; ?>"  />
+							(yyyy/mm/dd)         
+					</td>
+				</tr>
+        		<tr>
+          				<td><h3>Designation:</h3></td>
+          				<td>
+							<input type="text" name="designation" class="txt2" value="<?php echo $row[5]; ?>"  />
+						</td>
+        		</tr>
+        		<tr>
+          			<td><h3>Research Interest:</h3></td>
+          			<td><input type="text" name="research_interest" class="txt2" value="<?php echo $row[8]; ?>"  />
+						</td>
+        		</tr>
+      		    <tr>
+          			<td><h3>Office Address:</h3></td>
+          			<td><input type="text" name="office_address" class="txt2" value="<?php echo $row[9]; ?>" />
+					</td>
+				</tr>
+				<tr>
+					  <td><h3>Contact Number:</h3></td>
+					  <td>
+						<input type="text" name="contact_no" class="txt2" value="<?php echo $row[10];?> " />
+						</td>
+				</tr>
+				<tr>
+						<td><h3>Email Id:</h3></td>
+						<td>
+								<input type="text" name="e_id" class="txt2" value="<?php echo $row[11];?> " />
+						</td>
+				</tr>
+				<tr>
+						<td><h3>Qualification:</h3></td>
+						  <td>
+							<textarea  name="qual" class="txtarea"> <?php echo $row[7];?> </textarea>
+						</td>
+				</tr>
+				<tr>
+						<td><h3>Experience:</h3></td>
+						<td>
+							<textarea name="experience" class="txtarea"> <?php echo $row[6]; ?> " </textarea>
+						</td>
+				</tr>
+				<tr>
+						<td> 			<input type="submit" name="save" value="Save" class="btn"/> </td>
+				</tr>
+      </tbody>
+    </table><br />
+    
+    </form>
+	<?php
+							}
+					$result->close();
+					}
+					else
+					{
+						echo"no records matching";
+					}
+			}
+			else
+			{
+					echo"ERROR:could not execute $sql.".$mysqli->error;
+			}
+			
+if(isset($_POST['save']))
+{
+				$username=$_SESSION['username'];
+				$password=$_SESSION['password'];
+				$name=$_POST['name'];
+				$dob=$_POST['dob'];
+				$designation=$_POST['designation'];
+				$research_interest=$_POST['research_interest'];
+				$office_address=$_POST['office_address'];
+				$contact_no=$_POST['contact_no'];
+				$e_id=$_POST['e_id'];
+				$qual=$_POST['qual'];
+				$experience=$_POST['experience'];
+				$sql="UPDATE profile SET name = '".$name."', dob = '".$dob."', designation ='".$designation."', office_address ='".$office_address."' , e_id ='".$e_id."' , contact_no ='".$contact_no."' , research_interest = '".$research_interest."', qualification = '".$qual."', experience = '".$experience."' WHERE  id='".$_GET['e']."'";
+				
+				
+			if($mysqli->query($sql))
+			{
+				echo "Updated Successfully";
+				echo '<script>window.location="profile.php";</script>';
+				
+			}
+
+			else{
+						echo "Error: Could not execute $sql.".$mysqli->error;
+				}
+	}
+?>
+
+
+  </div>
+	</div>
+</body>
+</html>
